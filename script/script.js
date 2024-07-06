@@ -17,3 +17,19 @@ faqs.forEach(faq=>{
     }
   })
 })
+
+const menu=document.querySelector(".nav__menu");
+const openMenu=document.querySelector("#open-menu-btn");
+const closeMenu=document.querySelector("#close-menu-btn");
+
+openMenu.addEventListener('click',()=>{
+  menu.style.display="flex";
+  closeMenu.style.display="inline-block";
+  openMenu.style.display="none";
+})
+
+closeMenu.addEventListener('click',()=>{
+  menu.style.display="none";
+  openMenu.style.display="inline-block";
+  closeMenu.style.display="none";
+})
